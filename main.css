@@ -14,7 +14,7 @@ table {
     opacity: 0.9;
 }
 
-table td {
+table td, th {
     color:black;
     opacity: 1;
 }
@@ -23,9 +23,5 @@ table td {
     background-color: red;
     font-weight: bold;
     border-color: white;
-}
-
-img #bruce {
-    height: 300px;
-    width: auto;
+    margin-bottom: 50px;
 }
