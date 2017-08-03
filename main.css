@@ -1,0 +1,31 @@
+body {
+    background-image: url('/imgs/space.jpeg');
+}
+
+h1 {
+    color: white;
+    font-size: 78px;
+}
+
+table {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: grey;
+    opacity: 0.9;
+}
+
+table td {
+    color:black;
+    opacity: 1;
+}
+
+.btn {
+    background-color: red;
+    font-weight: bold;
+    border-color: white;
+}
+
+img #bruce {
+    height: 300px;
+    width: auto;
+}
