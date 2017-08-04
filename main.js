@@ -10,15 +10,27 @@ $(document).ready(function (){
         url: 'https://api.nasa.gov/neo/rest/v1/feed?start_date=2017-08-01&end_date=2017-08-01&detailed=true&api_key=S3PmfcdtXaoYuUfgeotZnnBPIM0aR73Tvc8h6Ae9',
         success: function(data) {
                 // console.log(JSON.stringify(result));
+
             var nearEarth = data.near_earth_objects;
             var newEarthDate = (nearEarth['2017-08-01']);
 
-            var trueDanger = [];
+            var trueDanger = []; /*Asteroids With Potential Hazard True */
             for(var key in newEarthDate){
                 if (newEarthDate[key].is_potentially_hazardous_asteroid){
                     trueDanger.push(newEarthDate[key]);
                 }
             } console.log(trueDanger);
+
+            var nameData = []; /* Pulling Asteroid Names */
+            for (var key in trueDanger){
+                nameData.push(trueDanger[key].name);
+            } console.log(name);
+            var asteroidName = '<td>' + nameData + '</td>';
+            console.log(asteroidName);
+
+
+
+
 
             // how can I dinamically populate my dom using jquery.
 
