@@ -19,6 +19,12 @@ table td, th {
     opacity: 1;
 }
 
+table td {
+    margin: 10px 0;
+    border-bottom: 1px solid white;
+    border-right:1px solid white;
+}
+
 .btn {
     background-color: red;
     font-weight: bold;
