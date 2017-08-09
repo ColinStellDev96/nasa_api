@@ -7,6 +7,20 @@ h1 {
     font-size: 78px;
 }
 
+p {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    display:inline-block;
+    margin: 10px 20px 10px 0px;;
+}
+
+.form-inline {
+    margin: 20px 0;
+    display: inline-block;
+    margin: 0 auto;
+}
+
 table {
     font-size: 20px;
     font-weight: bold;
