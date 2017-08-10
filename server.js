@@ -3,8 +3,10 @@ var request = require('request');
 var bodyParser = require('body-parser');
 
 var app = express();
+// Static Path
 app.use(express.static('./public'));
 
+// Body Parser MiddleWare
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 

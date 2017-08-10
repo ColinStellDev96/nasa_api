@@ -12,13 +12,20 @@ p {
     background-color: black;
     color: white;
     display:inline-block;
-    margin: 10px 20px 10px 0px;;
+    margin: 10px 20px 10px 0px;
+    opacity: .7;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .form-inline {
     margin: 20px 0;
     display: inline-block;
     margin: 0 auto;
+}
+
+.hidden {
+    display: none;
 }
 
 table {
