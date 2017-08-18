@@ -2,6 +2,7 @@ $(document).ready(function (){
             var trueDanger = [];
             $('#asteroidDateForm').on('submit', function (event){
                 event.preventDefault();
+                $('#asteroidData>tr>td').empty();
                 var dateChosen = $('#asteroidDate').val();
                 console.log(dateChosen);
             $.get('/nasa_data', {date: dateChosen}).then(function(data){
